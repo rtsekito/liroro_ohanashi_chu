@@ -12,8 +12,8 @@ body {
 	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 header {
-	background: #F5F3F0;
-	border-top: 4px solid #777;
+	background: #c0e4f2;
+	border-top: 4px solid #f5f5f5;
 	height: 80px;
 }
 #header-inner {
@@ -27,7 +27,7 @@ header {
 	line-height: 1.2;
 }
 aside {
-	background-color: #f5f5f5;
+	background-color: #fff7c9;
 	padding: 20px;
 }
 .side-title {
@@ -91,8 +91,8 @@ h2 {
 footer {
 	padding: 20px;
 	height: 100px;
-	background-color: #000;
-	color: #fff;
+	background-color: #f7c4d4;
+	color: #000;
 	text-align: center;
 }
 blockquote {
