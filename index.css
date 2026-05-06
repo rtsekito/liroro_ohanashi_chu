@@ -4,6 +4,7 @@ body {
 	padding: 0;
 	color: #333;
 	line-height: 1.6;
+	font-family: "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", sans-serif;
 }
 #outer {
 	margin: 0 auto;
