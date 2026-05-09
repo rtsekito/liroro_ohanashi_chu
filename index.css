@@ -20,6 +20,9 @@ header {
 #header-inner {
 	padding: 20px;
 }
+#page-title {
+	padding: 10px 0 0 0;
+}
 #text {
 	padding: 10px 20px;
 }
@@ -29,6 +32,9 @@ header {
 #text li {
 	list-style: none;
 	margin-bottom: 0.75rem;
+}
+#intro-thunb img {
+	border-radius: 8px;
 }
 .description {
 	padding-left: 10px;
