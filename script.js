@@ -1,5 +1,5 @@
-new Splide( '.splide', {
+new Splide('.splide', {
     autoplay: true,
     interval: 10000,
-    rewind:true
-} ).mount();
+    rewind: true
+}).mount();

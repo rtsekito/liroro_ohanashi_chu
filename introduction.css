@@ -1,4 +1,5 @@
 @charset "UTF-8";
+
 body {
 	margin: 0;
 	padding: 0;
@@ -6,100 +7,124 @@ body {
 	line-height: 1.6;
 	font-family: "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", sans-serif;
 }
+
 #outer {
 	margin: 0 auto;
 	width: 800px;
 	background-color: #fff;
 	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
+
 header {
 	background: #c0e4f2;
 	border-top: 4px solid #f7c4d4;
 	height: 80px;
 }
+
 #header-inner {
 	padding: 20px;
 }
+
 #page-title {
 	padding: 10px 0 0 0;
 }
+
 #text {
 	padding: 10px 20px;
 }
+
 #text ul {
 	padding-left: 1rem;
 }
+
 #text li {
 	list-style: none;
 	margin-bottom: 0.75rem;
 }
+
 .description {
 	padding-left: 10px;
 	line-height: 1.2;
 }
+
 aside {
 	background-color: #fff7c9;
 	padding: 20px;
 }
+
 .side-title {
 	font-weight: bold;
 }
+
 .side {
 	margin: 0 0 10px 0;
 	padding: 2px 8px 8px 7px;
 }
+
 .side a {
 	text-decoration: none;
 }
+
 .side a:hover {
 	text-decoration: underline;
 }
+
 .side ul {
 	padding-left: 1rem;
 }
+
 .side li {
 	list-style: disc;
 	margin-bottom: 0.5rem;
 }
+
 p {
 	margin: 1em 0;
 }
+
 img {
 	max-width: 100%;
 	height: auto;
 	border: 0;
 	border-radius: 8px;
 }
+
 hr {
 	border-width: 1px 0 0 0;
 	border-style: solid;
 	border-color: #ccc;
 	height: 1px;
 }
+
 a {
 	font-weight: normal;
 }
+
 h1 {
 	font-size: 20px;
 	padding: 10px 0 0 0;
 	margin: 0;
 	font-weight: bold;
 }
+
 h1 a {
 	font-weight: bold;
 	color: #000000;
 	text-decoration: none;
 }
+
 h1 a:hover {
 	font-weight: bold;
 	color: #8c0000;
 	text-decoration: underline;
 }
+
 h2 {
 	font-size: 16px;
 	margin: 0;
 	padding: 3px 0 2px 0;
 }
+
 footer {
 	padding: 20px;
 	height: 100px;
@@ -107,21 +132,25 @@ footer {
 	color: #000;
 	text-align: center;
 }
+
 blockquote {
 	border: 1px solid #ccc;
 	padding: 5px;
 	margin: 10px;
 }
+
 @media screen and (max-width: 767px) {
-#outer {
-	margin: 0;
-	width: 100%;
-}
-aside {
-	padding: 15px;
-}
-footer {
-	padding: 15px;
-	height: auto;
-}
+	#outer {
+		margin: 0;
+		width: 100%;
+	}
+
+	aside {
+		padding: 15px;
+	}
+
+	footer {
+		padding: 15px;
+		height: auto;
+	}
 }
