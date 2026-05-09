@@ -29,6 +29,26 @@ header {
 	padding: 10px 0 0 0;
 }
 
+#img-ikura {
+	border: 1px #A39BD4 solid;
+}
+
+#img-purin {
+	border: 1px #D6E398 solid;
+}
+
+#img-chiyuki {
+	border: 1px #9B2E42 solid;
+}
+
+#img-bonet {
+	border: 1px #454157 solid;
+}
+
+#img-ramune {
+	border: 1px #BeE9FE solid;
+}
+
 #text {
 	padding: 10px 20px;
 }
