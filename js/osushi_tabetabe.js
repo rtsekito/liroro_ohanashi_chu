@@ -196,6 +196,7 @@ function draw() {
         if (score % 4 === 0) {
           level++;
           speed++;
+          timer -= 1;
         }
       }
       else if (score % 6 === 0) {
