@@ -11,6 +11,9 @@ let frameMem;
 let sushiArray = [];  //おすし配列
 
 let iX, iY; // いくらちゃん位置
+const iMouseX = 252; // いくらちゃん口元X座標
+const iMouseY = 325; // いくらちゃん口元Y座標
+const iBottomY = 100; // いくらちゃん底面Y座標
 
 const eatDist = 50; // 衝突判定範囲
 const iniSpeed = 10;
@@ -77,7 +80,7 @@ function gradientBackGround() {
 // いくらちゃんを初期位置に戻す
 function ikuraXYInit() {
   iX = windowWidth / 2;
-  iY = windowHeight - ikuraImg.height + 325;
+  iY = windowHeight - ikuraImg.height + iMouseY - iBottomY;
 }
 
 // 描画
@@ -102,13 +105,17 @@ function draw() {
   text("Miss:" + missCount + "/3", windowWidth - 10, 60);
 
   // いくらちゃんを表示
-  image(ikuraImg, iX - 252, windowHeight - ikuraImg.height);
+  image(ikuraImg, iX - iMouseX, windowHeight - ikuraImg.height - iBottomY);
 
   // いくらちゃんダミー円
   // strokeWeight(2);
   // stroke(0);
   // noFill();
   // circle(iX, iY, eatDist);
+
+  // 地面
+  fill("#fdd000");
+  rect(0, windowHeight - iBottomY, windowWidth, iBottomY);
 
   if (title === true) {
     // タイトル画面
@@ -205,7 +212,7 @@ function draw() {
         timer -= 2;
       }
     }
-    else if (s.y > windowHeight) {
+    else if (s.y > windowHeight - iBottomY) {
       // たべれなかった
       // おすし削除
       sushiArray.splice(i, 1);
