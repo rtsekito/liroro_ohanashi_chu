@@ -1,6 +1,9 @@
 let ikuraImg, sushiImg; // イメージ
 let font; // フォント
 
+// フレームレート
+const frame = 30;
+
 // 状態
 let title;
 let start = false;
@@ -31,6 +34,8 @@ function preload() {
 
 // 初期化
 function setup() {
+  // フレームレート設定
+  frameRate(frame)
   // 描画領域
   createCanvas(windowWidth, windowHeight);
   // 背景
@@ -240,7 +245,7 @@ function draw() {
   // ゲーム中処理
   if (start === true) {
     // タイマーが経過したらおすし出現
-    if (frameCount - frameMem >= timer) {
+    if (frameCount - frameMem >= timer * (frame / 60)) {
       // print(frameCount);
       const rX = random(eatDist, windowWidth - eatDist)
       sushiArray.push(new Sushi(rX, 0, sushiImg));
@@ -298,7 +303,7 @@ class Sushi {
   // 更新
   update() {
     // Y位置を更新
-    this.y += speed;
+    this.y += speed * (60 / frame);
   }
 }
 
