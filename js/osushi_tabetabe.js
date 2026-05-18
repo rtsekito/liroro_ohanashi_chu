@@ -2,7 +2,7 @@ let ikuraImg, sushiImg; // イメージ
 let font; // フォント
 
 // フレームレート
-const frame = 30;
+const frame = 60;
 
 // 状態
 let title;
